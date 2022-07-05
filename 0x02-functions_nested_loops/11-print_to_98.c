@@ -19,10 +19,6 @@ printf("%d\n", 98);
 }
 putchar('\n');
 }
-/**
- * main - test functions for print_to_98
- * Return: 0 on success.
- */
 int main(void)
 {
 print_to_98(0);
