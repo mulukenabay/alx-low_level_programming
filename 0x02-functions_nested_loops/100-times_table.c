@@ -3,7 +3,7 @@
  * print_times_table - prints the times table for n.
  * @n: The multiplication table requested.
  * Return: Nothing.
- * /
+ */
 void print_times_table(int n)
 {
 int i, j, res;
@@ -39,7 +39,7 @@ _putchar((res % 10) + '0');
 }
 else
 _putchar((res % 10) + '0');
-}
+}				
 _putchar('\n');
 }
 }
