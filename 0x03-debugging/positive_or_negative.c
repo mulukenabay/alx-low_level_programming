@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Prints if number is positive, zero or negative
+ * positive_or_negative - Prints if number is positive, zero or negative
  * Return: Always (Success)
  */
-int main(void)
+int positive_or_negative(void)
 {
 int n;
 srand(time(0));
