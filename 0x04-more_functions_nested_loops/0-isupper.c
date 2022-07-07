@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * _isupper - used to return upper case letter
- * @c : integer passing parameter
- * Return: 1 for success or 0 for failure
+ * _isupper -  checks for uppercase character.
+ * @c: c -  Variable
+ * Return: Always 0.
  */
-int _isupper(int c);
+int _isupper(int c)
 {
-if (c >= 'A' && c <= 'Z')
+if (c >= 65 && c <= 90)
 {
 return (1);
-}
+{
 return (0);
 }
