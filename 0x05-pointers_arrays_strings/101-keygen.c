@@ -5,7 +5,7 @@
  * main - randem password
  * Return: 0 
  */
-int main()
+int main(void)
 {
 int pass, sum;
 sum = 0;
