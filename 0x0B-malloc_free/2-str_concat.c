@@ -36,5 +36,5 @@ count++;
 }
 return (strnew);
 }
-return 0;
+return (0);
 }
