@@ -2,6 +2,15 @@
 #define LISTS_H
 #include <stddef.h>
 #include <stdlib.h>
+
+/**
+ * struct list_s - Prints all the elements of a list_t list.
+ * @str: The list_t list.
+ * @len: length
+ * @next: next node
+ * Return: The number of nodes in h.
+ */
+
 typedef struct list_s
 {
 	char *str;
