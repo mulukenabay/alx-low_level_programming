@@ -1,31 +1,29 @@
 #include "main.h"
 /**
- * binary_to_uint - Entry Point
- * @b: const char
- * Return: 0
+ * binary_to_uint - convert binary string to decimal
+ * @b: binary string
+ *
+ * Return: decimal (unsigned int)
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int res = 0;
-	int base = 1, i = 0;
-
-	if (b == NULL)
-		return (0);
-
-	while (b[i + 1])
-	{
-		if (b[i] != '0' && b[i] != '1')
-			return (0);
-		i++;
-	}
-
-	while (i >= 0)
-	{
-		res += ((b[i] - '0') * base);
-		base *= 2;
-		i--;
-	}
-
-
-	return (res);
+unsigned int num, i, expo = 1;
+if (!b || !*b)
+return (0);
+i = 0;
+while (b[i])
+{
+if (b[i] - 48 > 1)
+return (0);
+i++;
 }
+i--;
+num = 0;
+do {
+num += (b[i] - '0') * expo;
+expo *= 2;
+} while (i--);
+return (num);
+}
+
+
